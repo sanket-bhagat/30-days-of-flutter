@@ -1,20 +1,55 @@
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    return const Material(
-      child: Center(
-        child: Text(
-          "Login Page",
-          style: TextStyle(
-            fontSize: 40.0,
-            color: Colors.blue,
-            fontWeight: FontWeight.bold,
+    return Material(
+      color: Colors.white,
+      child: Column(
+        children: [
+          Image.asset(
+            "assets/images/login_image.jpg",
+            fit: BoxFit.cover,
           ),
-        ),
+          Text(
+            "Welcome!",
+            style: TextStyle(
+              fontSize: 24.0,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              vertical: 16.0,
+              horizontal: 32.0,
+            ),
+            child: Column(
+              children: [
+                TextFormField(
+                  decoration: InputDecoration(
+                    labelText: "Username",
+                    hintText: "Enter Username",
+                  ),
+                ),
+                TextFormField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: "Password",
+                    hintText: "Enter Password",
+                  ),
+                ),
+                SizedBox(
+                  height: 20.0,
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Login",
+                  ),
+                ),
+              ],
+            ),
+          )
+        ],
       ),
     );
   }
