@@ -57,9 +57,9 @@ class _LoginPageState extends State<LoginPage> {
                         hintText: "Enter Username",
                       ),
                       validator: (value) {
-                        return (value == null || value.isEmpty)
-                            ? "Enter Username"
-                            : null;
+                        if (value == null || value.isEmpty)
+                          return "Enter Username";
+                        return null;
                       },
                       onChanged: (value) {
                         setState(() {
