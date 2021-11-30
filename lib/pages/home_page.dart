@@ -6,7 +6,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Catalog App"),
+        title: const Text(
+          "Catalog App",
+          style: TextStyle(color: Colors.black),
+        ),
+        // backgroundColor: Colors.white,
+        // elevation: 0,
+        // iconTheme: IconThemeData(color: Colors.black),
+        // centerTitle: true,
       ),
       body: const Center(
         child: Text("Welcome!"),
