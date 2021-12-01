@@ -10,7 +10,7 @@ class MyDrawer extends StatelessWidget {
         "https://imgr.search.brave.com/4lyVqWoIMVVFDOxg00J8jvLIywTGN7LHcu6bmVU0gzo/fit/491/225/ce/1/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Y/MmloeFBxSFJSdXFO/bkZDajFXSUR3SGFI/SiZwaWQ9QXBp";
     return Drawer(
       child: Container(
-        color: Color(0xff2396f2),
+        color: Colors.lightBlue,
         child: ListView(
           children: [
             DrawerHeader(
